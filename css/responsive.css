@@ -1,0 +1,245 @@
+
+
+/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
+
+@media (min-width: 1200px) and (max-width: 1500px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .banner_main {
+        padding-top: 130px;
+   }
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .web{
+        display: none;
+        size: 120%;
+    }
+    .mobile{
+        display: none;
+        height: 50px;
+    }
+    .banner_main {
+        padding-top: 150px;
+   }
+   .text-bg{
+       padding-top: 0px;
+   }
+    .navigation.navbar-light .navbar-nav .nav-link {
+        padding: 0 20px;
+    }
+    .text-bg h1 {
+        padding-top: 0px;
+        font-size: 44px;
+        line-height: 61px;
+        padding-bottom: 18px;
+    }
+    .text-bg span {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .text-bg a {
+        margin-right: 5px;
+        padding: 10px 23px;
+        float: inherit;
+        
+    }
+    .track .track-box {
+        padding: 25px 15px;
+    }
+    .track .track-box h3 {
+        font-size: 17px;
+    }
+    .prizes .prizes-box {
+        padding: 40px 10px 20px 10px;
+    }
+    .prizes .prizes-box h3 {
+        font-size: 19px;
+    }
+    .bg {
+        max-width: 170px;
+    }
+    .main_form {
+        padding: 55px 25px;
+    }
+    .cont span {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .cont p {
+        padding: 0px 30px;
+        padding-bottom: 60px;
+    }
+    .cont {
+        margin-top: 47%;
+    }
+    .main_form {
+        margin-bottom: -92%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .web{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        height: 50px;
+    }
+    .banner_main {
+        padding-top: 200px;
+   }
+    .mean-container .mean-bar {
+        margin-top: 0px;
+    }
+    .text-bg a {
+        float: inherit;
+        margin-bottom: 30px;
+    }
+    .titlepage h2 {
+        font-size: 36px;
+    }
+    .about_us p {
+        padding: 40px 0px;
+    }
+    .bg {
+        margin-bottom: 30px;
+    }
+    .cont p {
+        padding: 0px 30px;
+        padding-bottom: 60px;
+    }
+    .cont {
+        margin-top: 50%;
+    }
+    .main_form {
+        margin-bottom: -58%;
+    }
+    .cont span {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .navigation.navbar {
+        float: right;
+        display: inherit !important;
+        padding: 0;
+        width: 100%;
+        margin-top: -70px;
+    }
+    .navigation .navbar-collapse {
+        background: #fff;
+        padding: 20px;
+        margin-top: 56px;
+        position: absolute;
+        width: 100%;
+        margin-right: 20px;
+        z-index: 999;
+    }
+    .navigation.navbar-light .navbar-nav .nav-link {
+        padding: 10px 0;
+        color: #000;
+    }
+    .navigation.navbar-light .navbar-toggler {
+        border-color: #fff;
+        float: right;
+    }
+    .cont i {
+        font-size: small;
+
+   }
+}
+
+@media (max-width: 575px) {
+    .header {
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    .logo {
+        text-align: center !important;
+        padding-bottom: 25px;
+        float: left;
+    }
+    .web{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        height: 50px;
+    }
+    .banner_main {
+        padding-top: 120px;
+   }
+   .text-bg{
+       padding-top: 0px;
+   }
+    .text-bg h1 {
+        font-size: 41px;
+        line-height: 55px;
+        padding-bottom: 18px;
+    }
+    .text-bg a {
+        float: inherit;
+        margin-bottom: 30px;
+    }
+    .text-bg span {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .titlepage h2 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .about_us p {
+        padding: 40px 0px;
+    }
+    .bg {
+        margin-bottom: 30px;
+    }
+    .cont h3 {
+        font-size: 30px;
+    }
+    .cont p {
+        padding: 0px 0px;
+        padding-bottom: 60px;
+    }
+    .cont span {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .cont {
+        margin-top: 89%;
+    }
+    .main_form {
+        margin-bottom: -102%;
+        padding: 55px 15px;
+    }
+    .navigation.navbar {
+        float: right;
+        display: inherit !important;
+        padding: 0;
+        width: 100%;
+        margin-top: -70px;
+    }
+    .navigation .navbar-collapse {
+        background: #fff;
+        padding: 20px;
+        margin-top: 56px;
+        position: absolute;
+        width: 100%;
+        margin-right: 20px;
+        z-index: 999;
+    }
+    .navigation.navbar-light .navbar-nav .nav-link {
+        padding: 10px 0;
+        color: #000;
+    }
+    .navigation.navbar-light .navbar-toggler {
+        border-color: #fff;
+        float: right;
+    }
+}
+
