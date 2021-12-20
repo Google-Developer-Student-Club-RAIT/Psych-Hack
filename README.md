@@ -1,1 +1,2 @@
 # Psych-Hack
+PsychHack is a 36-hour hackathon aimed at encouraging student developers and problem solvers to create technology that addresses Mental Health and its multitudes while also making the world a better place to live. This is a plethora of opportunities for tech savvy individuals to flaunt their abilities, capitalise on new and old tech trends, and have their talent recognised and appreciated.
