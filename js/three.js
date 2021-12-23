@@ -75,6 +75,13 @@ scene.add(light);
    "position",
    new THREE.BufferAttribute(getRandomParticelPos(noOfPoints2), 3)
  );
+  //star3 Geometry
+  const geometry3 = new THREE.BufferGeometry();
+  const noOfPoints3 = 1000; //2100;
+  geometry3.setAttribute(
+    "position",
+    new THREE.BufferAttribute(getRandomParticelPos(noOfPoints3), 3)
+  );
 
  // Texture loader for stars
  const loader = new THREE.TextureLoader();
@@ -82,29 +89,39 @@ scene.add(light);
  //create points
  //star1
  const material = new THREE.PointsMaterial({
-    size: 0.4, 
+    size: 6, 
     //texture pack //loader.load converts png to texture map 
-    map: loader.load("images/snowfw.png"),
+    map: loader.load("images/snow (2).png"),
     transparent: true,
     alphaTest: 0.5, //removes annoying outlines to the texture 
     color: 0xffffff,
   });
 
- //star1
+ //star2
   const material2 = new THREE.PointsMaterial({
-    size: 0.4, 
+    size: 0.2, 
     //texture pack //loader.load converts png to texture map 
-    map: loader.load("images/snowfw.png"),
+    map: loader.load("images/snow (3).png"),
     transparent: true,
     alphaTest: 0.5, //removes annoying outlines to the texture 
-    color: 0x44aa88
+    // color: 0x44aa88
   });
+ //star3
+ const material3 = new THREE.PointsMaterial({
+  size: 0.2, 
+  //texture pack //loader.load converts png to texture map 
+  map: loader.load("images/snow (3).png"),
+  transparent: true,
+  alphaTest: 0.5, //removes annoying outlines to the texture 
+  color: 0x44aa88
+});
 
  // create Points
  const stars = new THREE.Points(geometry, material);
  const stars2 = new THREE.Points(geometry2, material2);
+ const stars3 = new THREE.Points(geometry3, material3);
 
- scene.add(stars,stars2);
+ scene.add(stars,stars2,stars3);
 const clock = new THREE.Clock();
 
 const render = (time) => {
@@ -118,8 +135,9 @@ const render = (time) => {
     // });
     
     //falling effect
-    stars.rotation.x = -.1 * elapsedTime; 
-    stars2.rotation.x = -.1 * elapsedTime; 
+    stars.rotation.x = -.05 * elapsedTime; 
+    stars2.rotation.x = -.05 * elapsedTime;
+    stars3.rotation.x = -.05 * elapsedTime;  
 
     if (resizeRendererToDisplaySize(renderer)) {
       const canvas = renderer.domElement;
@@ -130,8 +148,9 @@ const render = (time) => {
 
     if(mouseX > 0){
     // stars.rotation.x = mouseY * (elapsedTime * -0.00008); //move up down
-    stars.rotation.y = mouseX * ( 0.00009);
+    stars.rotation.y = mouseX * ( 0.001);
     stars2.rotation.y = mouseX * ( 0.00009);
+    stars3.rotation.y = mouseX * ( 0.00009);
     }
     // render the scene
     renderer.render(scene, camera);
