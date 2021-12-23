@@ -1,6 +1,6 @@
 
   canvas {
-    position:absolute; /* allows to scroll the shape */
+    position: fixed; /* allows to scroll the shape */
     width: 100%;
     height: 100%;
     top: 0;
@@ -9,6 +9,6 @@
     border: none;
     mix-blend-mode:darken;
     z-index: -1;  /* puts the shape behind the font */
-    overflow-y:hidden;
+    overflow: auto;
   }
  

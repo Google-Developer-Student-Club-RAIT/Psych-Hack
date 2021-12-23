@@ -341,7 +341,7 @@ button {
      padding:15px;
 }
 .banner_main {
-     background: #ffd4d400;
+     background: #ffd4d4;
      background-size: 100% 100% 100%;
      background-repeat: no-repeat;
      padding-top: 200px;
@@ -424,7 +424,8 @@ button {
 
 .about {
      padding-top: 90px;
-     margin: 20px;
+     /* margin: 20px; */
+     padding: 90px 20px 90px;
      background-color: white;
 }
 
@@ -473,7 +474,7 @@ button {
 /** track section **/
 
 .track {
-     margin-top: 90px;
+     
      padding: 60px 0;
      background: #fff4c2;
      font-family: Poppins;
@@ -574,10 +575,11 @@ button {
 /** prizes section **/
 
 .prizes {
-     margin-top: 90px;
+     
      background: #ffff;
      font-family: Poppins;
-     padding-top: 90px;
+     padding: 90px 0px;
+
 
 }
 
@@ -739,7 +741,7 @@ button {
 
 /* Organizer section */
 .organizer {
-     margin-top: 90px;
+     
      padding: 60px 0;
      background:#c4e4fc;
      font-family: Poppins;
