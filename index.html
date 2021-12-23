@@ -115,12 +115,9 @@
       <!-- end header -->
       <!-- banner -->
       
-      <!--  -->
-
-      <canvas id="c" ></canvas>
-         
-      <!--  -->
-   
+      <!-- Moving Background starts -->
+      <canvas id="c" ></canvas>        
+      <!-- Moving Background ends -->
       
          <section class="banner_main">
 
@@ -189,7 +186,7 @@
       <!-- end about -->
       <!-- track start  -->
       <div id="track" class="track">
-         <div class="container">
+         <div class="container" id="collapse">
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
@@ -203,49 +200,65 @@
             <div class="row">
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div class="track-box">
-                     <i><img src="images/service1.png" alt="#" /></i>
-                     <h3> Track 1</h3>
+                     <i><img src="images/brain.png" alt="#" /></i>
+                     <h3> AI:Artificial intelligence</h3>
                      <p>Coming Soon!</p>
                   </div>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div class="track-box">
-                     <i><img src="images/service2.png" alt="#" /></i>
-                     <h3>Track 2</h3>
+                     <i><img src="images/immersive.png" alt="#" /></i>
+                     <h3>AR/VR</h3>
                      <p>Coming Soon!</p>
                   </div>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div class="track-box">
-                     <i><img src="images/service3.png" alt="#" /></i>
-                     <h3>Track 3</h3>
+                     <i><img src="images/solidarity.png" alt="#" /></i>
+                     <h3>Healthcare</h3>
                      <p>Coming Soon!</p>
                   </div>
                </div>
-               <!-- <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                  <div class="track-box">
-                     <i><img src="images/service4.png" alt="#" /></i>
-                     <h3>VPS Hosting</h3>
-                     <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
-                  </div>
-               </div>
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                  <div class="track-box">
-                     <i><img src="images/service5.png" alt="#" /></i>
-                     <h3>Cloud Hosting</h3>
-                     <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
-                  </div>
-               </div>
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                  <div class="track-box">
-                     <i><img src="images/service6.png" alt="#" /></i>
-                     <h3>Reseller Hosting</h3>
-                     <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
-                  </div>
-               </div> -->
-               <!-- <a class="read_more" href="#">Read More</a> -->
             </div>
-         </div>
+                <div class="row">
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="track-box">
+                     <i><img src="images/graduation-cap.png" alt="#" /></i>
+                     <h3>Education</h3>
+                     <p>Coming Soon!</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="track-box">
+                     <i><img src="images/blockchain.png" alt="#" /></i>
+                     <h3>Blockchain</h3>
+                     <p>Coming Soon!</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="track-box">
+                     <i><img src="images/mental-health.png" alt="#" /></i>
+                     <h3>Mental Health</h3>
+                     <p>Coming Soon!</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="track-box">
+                     <i><img src="images/self-care.png" alt="#" /></i>
+                     <h3>Self care</h3>
+                     <p>Coming Soon!</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="track-box">
+                     <i><img src="images/book.png" alt="#" /></i>
+                     <h3>Open innovation</h3>
+                     <p>Coming Soon!</p>
+                  </div>
+               </div>
+               </div>
+            </div>
+            <span class="read_more" id="open">READ MORE</span>
       </div>
       <!-- end track -->
       <!-- prizes -->
@@ -642,6 +655,36 @@
 
 
       <!-- Javascript files-->
+      <script>
+         let coll = document.getElementById("open");
+         let content = document.getElementById("collapse");
+
+         function myFunction(x) {
+            if (x.matches) { // If media query matches
+                  coll.addEventListener("click", function() {
+                     console.log("clicked");
+                        if (content.style.height === '1000px') {
+                           content.style.height = '2800px';
+                        } else {
+                           content.style.height = '1000px';
+                        }
+                     });
+            } 
+            else {      
+                  coll.addEventListener("click", function() {
+                     if (content.style.height === '420px') {
+                        content.style.height = '1200px';
+                     } else {
+                        content.style.height = '420px';
+                     }
+                  });
+            }
+            }
+
+            var x = window.matchMedia("(max-width: 700px)")
+            myFunction(x) // Call listener function at run time
+            x.addListener(myFunction) // Attach listener function on state changes
+      </script>
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
