@@ -302,7 +302,7 @@ button {
 /*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
 
 .header {
-     background: rgb(245, 245, 245);
+     background: rgba(255, 255, 255, 0);
      width: 100%;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -311,7 +311,7 @@ button {
 }
 
 .header .container{
-     background:    rgb(245, 245, 245) ;
+     background:    rgba(245, 245, 245, 0.680) ;
      opacity: 100%;
      padding: 5px 15px  5px 15px;
      border-radius: 10px;
@@ -341,7 +341,7 @@ button {
      padding:15px;
 }
 .banner_main {
-     background: #ffd4d4;
+     background: #ffd4d400;
      background-size: 100% 100% 100%;
      background-repeat: no-repeat;
      padding-top: 200px;
@@ -425,6 +425,7 @@ button {
 .about {
      padding-top: 90px;
      margin: 20px;
+     background-color: white;
 }
 
 .about_us {
