@@ -49,7 +49,8 @@ const renderer = new THREE.WebGLRenderer({
 });   
 
 //Changing the background colour of the canvas
-renderer.setClearColor( 0xffffff,0);
+renderer.setClearColor( 0x0000000,0);
+
 
 // create a light source
 const color = 0xffffff;
@@ -94,7 +95,7 @@ scene.add(light);
     map: loader.load("images/snow (2).png"),
     transparent: true,
     alphaTest: 0.5, //removes annoying outlines to the texture 
-    color: 0xffffff,
+    color: 0xf5f5f5,
   });
 
  //star2
