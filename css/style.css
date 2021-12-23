@@ -479,7 +479,11 @@ button {
      font-family: Poppins;
      padding-top: 90px;
 }
-
+.track .container{
+     height: 420px;
+     overflow-y: hidden;
+     transition: height 1s ease-in-out;
+}
 .track .titlepage {
      text-align: center;
 }
@@ -494,16 +498,19 @@ button {
 } */
 
 .track .track-box i {
-     background:black;
+     background:white;
      width: 100px;
      height: 100px;
      border-radius: 50px;
      display: inline-block;
      padding-top: 19px;
 }
+.track .track-box i img {
+     height: 70px;
+}
 
 .track .track-box i:hover {
-     background: #ddd;
+     background: #fff4c2;
 }
 
 .track .track-box h3 {
@@ -549,11 +556,15 @@ button {
      text-align: center;
      margin: 0 auto;
      margin-top: 20px;
+     font-family: Poppins;
+     cursor: pointer;
 }
 
 .read_more:hover {
+     transition: all 0.4s ease-in;
      background: #8308eb;
      color: #fff;
+     box-shadow: 4px 5px 7px rgba(49, 49, 49, 0.479);
 }
 
 
