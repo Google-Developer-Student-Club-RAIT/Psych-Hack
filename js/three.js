@@ -49,7 +49,7 @@ const renderer = new THREE.WebGLRenderer({
 });   
 
 //Changing the background colour of the canvas
-renderer.setClearColor( 0xffd4d4, 1 );
+renderer.setClearColor( 0xffffff,0);
 
 // create a light source
 const color = 0xffffff;
