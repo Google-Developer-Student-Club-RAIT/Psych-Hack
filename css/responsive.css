@@ -48,6 +48,9 @@
         float: inherit;
         
     }
+    .track .container{
+        max-height: 1000px;
+    }
     .track .track-box {
         padding: 25px 15px;
     }
@@ -150,6 +153,9 @@
     .cont i {
         font-size: small;
 
+   }
+   .track .container{
+       height: 1000px;
    }
 }
 
