@@ -507,6 +507,7 @@ button {
      border-radius: 50px;
      display: inline-block;
      padding-top: 19px;
+     
 }
 .track .track-box i img {
      height: 70px;
@@ -802,6 +803,9 @@ button {
 .organizer .org-box:hover {
      transition: ease-in all 0.1s;
      transform: scale(1.1);
+     position: sticky;
+     z-index: 1;
+     background:#c4e4fc;
 }
 .profile {
      font-size: 24px;
