@@ -90,10 +90,10 @@ scene.add(light);
  //create points
  //star1
  const material = new THREE.PointsMaterial({
-    size: 6, 
+    size: 0.5, 
     //texture pack //loader.load converts png to texture map 
     map: loader.load("images/snow (2).png"),
-    transparent: true,
+    transparent: false,
     alphaTest: 0.5, //removes annoying outlines to the texture 
     color: 0xf5f5f5,
   });
@@ -104,7 +104,7 @@ scene.add(light);
     //texture pack //loader.load converts png to texture map 
     map: loader.load("images/snow (3).png"),
     transparent: true,
-    alphaTest: 0.5, //removes annoying outlines to the texture 
+    alphaTest: 0.5 , //removes annoying outlines to the texture 
     // color: 0x44aa88
   });
  //star3

@@ -7,8 +7,8 @@
     left: 0;
     outline: none;
     border: none;
-    mix-blend-mode:darken;
-    z-index: -1;  /* puts the shape behind the font */
+    mix-blend-mode: normal;
+    z-index: 0;  /* puts the shape behind the font */
     overflow: auto;
   }
  
