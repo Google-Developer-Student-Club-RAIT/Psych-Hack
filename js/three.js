@@ -12,7 +12,19 @@ const resizeRendererToDisplaySize = (renderer) => {
   return needResize;
 };
 
-//Generates Random pos of particles
+// function myFunction(x) {
+//   if (x.matches) { // If media query matches
+//     document.body.style.backgroundColor = "yellow";
+//   } else {
+//     document.body.style.backgroundColor = "pink";
+//   }
+// }
+
+// var x = window.matchMedia("(max-width: 700px)")
+// myFunction(x) // Call listener function at run time
+// x.addEventListener('change', myFunction(x));
+
+// //Generates Random pos of particles
 const getRandomParticelPos = (particleCount) => {
 const arr = new Float32Array(particleCount * 3);
 for (let i = 0; i < particleCount; i++) {
