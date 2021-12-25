@@ -1,3 +1,34 @@
+
+function eventTimer(){
+  var x = setInterval(function() {
+    document.getElementById("cdtext").innerHTML = "EVENT IS NOW LIVE";
+    // Set the date we're counting down to
+    var countDownDate = new Date("feb 11, 2022 22:00:00").getTime();
+    
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result in the element with id="countdown"
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+    document.getElementById("countdown2").innerHTML = minutes + "m " + seconds + "s ";
+
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("cdtext").innerHTML = "This Event has ended";
+    }
+
+  }, 1000);
+}
+
 // Set the date we're counting down to
 var countDownDate = new Date("feb 10, 2022 10:00:00").getTime();
 
@@ -19,10 +50,9 @@ var x = setInterval(function() {
   // Display the result in the element with id="countdown"
   document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
   document.getElementById("countdown2").innerHTML = minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
+  // If the count down is finished
   if (distance < 0) {
+    eventTimer();
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "EVENT IS NOW LIVE";
   }
 }, 1000);
