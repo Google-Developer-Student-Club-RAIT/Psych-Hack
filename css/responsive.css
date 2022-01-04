@@ -15,6 +15,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
     .web{
         display: none;
         size: 120%;
@@ -86,6 +87,9 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+    .header{
+        padding-top: 0px;
+    }
     .web{
         display: none;
     }
@@ -161,7 +165,7 @@
 
 @media (max-width: 575px) {
     .header {
-        padding-top: 10px;
+        padding-top: 0px;
         padding-bottom: 5px;
     }
     .logo {
@@ -247,5 +251,12 @@
         border-color: #fff;
         float: right;
     }
+    .track .container{
+        height: 1000px;
+    }
+    .prizes .container{
+        height: 1500px;
+    }
+
 }
 

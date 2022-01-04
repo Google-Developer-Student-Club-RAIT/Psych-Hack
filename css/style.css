@@ -491,7 +491,7 @@ button {
 .track .container{
      height: 420px;
      overflow-y: hidden;
-     transition: height 1s ease-in-out;
+     transition: height 0.6s ease-in-out;
 }
 .track .titlepage {
      text-align: center;
@@ -592,8 +592,14 @@ button {
      padding: 90px 0px;
      z-index: 3;
      position: sticky;
+     
 
 
+}
+.prizes .container{
+     height: 500px;
+     overflow-y: hidden;
+     transition: height 0.6s ease-in-out;
 }
 /* .prizes .container{
      height: 600px;
@@ -629,7 +635,8 @@ button {
      padding: 40px 20px 20px 20px;
      transition: ease-in all 0.5s;
      margin-bottom: 30px;
-     box-shadow: #ddd 0px 0px 10px
+     box-shadow: #ddd 0px 0px 10px;
+     
 }
 
 .prizes .prizes-box p {
@@ -664,13 +671,15 @@ button {
      color: black!important;
 }
 
-.prizes .prizes-box-spon h3 {
+.prizes .prizes-box-spon h4 {
      padding: 20px 0px 20px 0px;
-     font-size: 20px;
+     font-size: 15px;
      line-height: 25px;
      color: #090808;
      display: block;
      font-weight: 500;
+     padding-left: 30px;
+     padding-top: 30px;
 }
 
 .prizes .prizes-box-spon {
@@ -682,58 +691,67 @@ button {
      transition: ease-in all 0.5s;
      margin-bottom: 30px;
      box-shadow: #ddd 0px 0px 10px;
+     overflow: scroll;
      
 }
-.prizes img{
-    width: fit-content;
-}
+
 .prizes .prizes-box-spon p {
      font-size: 16px;
      line-height: 24px;
      color: #090808;
-     text-align: justify;
-     width: fit-content;
+     text-align: left;
+    
 }
 .prizes .flip-card {
      background-color: transparent;
-     width: 100%;
-     height: 120px;
+     width: auto;
+     height: 150px;
      perspective: 1000px;
+     padding-bottom: 20px;
+     
    }
    
    .flip-card-inner {
-     position: relative;
-
+     justify-content: center;
      text-align: center;
      transition: transform 0.6s;
      transform-style: preserve-3d;
+     
      /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
    }
    
    .flip-card:hover .flip-card-inner {
      transform: rotateY(180deg);
+     height: fit-content;
+     width: 100%;
    }
    
    .flip-card-front, .flip-card-back {
      position: absolute;
-
      -webkit-backface-visibility: hidden;
      backface-visibility: hidden;
-     width: fit-content;
+     
      
    }
    
    .flip-card-front {
-     
+     justify-content: center;
+     text-align: center;
+     transition: transform 0.6s;
+     transform-style: preserve-3d;
      color: black;
+
    }
    
    .flip-card-back {
-     
-     color: white;
+
      transform: rotateY(180deg);
    
    }
+   .flip-card-back h1{
+        color: white;
+   }
+
 
 
 /* .bg {
