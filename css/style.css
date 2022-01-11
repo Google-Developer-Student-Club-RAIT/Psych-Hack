@@ -1017,6 +1017,9 @@ button {
 
 /*end faq section */
 /* Sponsor section */
+
+
+
 .sponsor {
      
      background: #ffff;
@@ -1041,14 +1044,17 @@ button {
 .sponsor .titlepage p {
      color: black;
 }
-.sponsor .gold-sponsor {
+.sponsor .sponsor-type {
      text-align: center;
      border-color: grey;
      padding-top: 30px;
      padding-bottom: 30px;
+     /* background-image: url('https://i2.wp.com/files.123freevectors.com/wp-content/original/131286-gold-low-poly-background-template.jpg?w=800&q=95');
+     background-repeat: no-repeat;
+     background-size: cover; */
 }
 
-.sponsor .gold-sponsor h2{
+.sponsor .sponsor-type h2{
      font-family: 'Great Vibes', cursive;
      color: black;
      -webkit-text-stroke-width: 0.0000000001px;
@@ -1057,30 +1063,24 @@ button {
      padding-bottom: 20px;
      font-size: 50px;    
 }
-.sponsor .silver-sponsor {
-     text-align: center;
-     border-color: grey;
-     padding-top: 40px;
-     padding-bottom: 20px;
-}
 
-.sponsor .silver-sponsor h2{
-     font-family: 'Great Vibes', cursive;
-     color: black;
-     -webkit-text-stroke-width: 0.0001px;
-     -webkit-text-stroke-color: black;
-     padding-bottom: 20px;
-     font-size: 50px;    
-}
 .sponsor .row{
-     justify-content: space-evenly;
+     /* justify-content: space-evenly; */
+     justify-content: space-around;
 }
 
 .sponsor .sponsor-pics{
      padding: 15px;
+
 }
 .sponsor-pics img{
      size: 100%;
+     vertical-align: middle;
+}
+.sponsor-pics:hover{
+     transform: translate3D(0,-1px,0) scale(1.2);
+     transition: ease-in all 0.2s;
+     
 }
 .sponsors-list{
      padding-bottom: 100px;
