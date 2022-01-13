@@ -1060,28 +1060,32 @@ button {
      -webkit-text-stroke-width: 0.0000000001px;
      -webkit-text-stroke-color: black;
      padding-top: 40;
-     padding-bottom: 20px;
      font-size: 50px;    
 }
 
 .sponsor .row{
      /* justify-content: space-evenly; */
+     display: flex;
      justify-content: space-around;
+     padding-bottom: 30px;
 }
 
 .sponsor .sponsor-pics{
-     padding: 15px;
+     padding: 20px;
+     display: flex; 
+     justify-content: center;
+     
 
 }
-.sponsor-pics img{
-     size: 100%;
-     vertical-align: middle;
-}
+
+
 .sponsor-pics:hover{
      transform: translate3D(0,-1px,0) scale(1.2);
      transition: ease-in all 0.2s;
      
 }
+
+
 .sponsors-list{
      padding-bottom: 100px;
 }
