@@ -136,7 +136,9 @@
         display: inherit !important;
         padding: 0;
         width: 100%;
-        margin-top: -70px;
+        top: 5px;
+        display: flex;
+        justify-content: flex-end;
     }
     .navigation .navbar-collapse {
         background: #fff;
@@ -155,10 +157,7 @@
         border-color: #fff;
         float: right;
     }
-    .cont i {
-        font-size: small;
 
-   }
    .track .container{
        height: 1000px;
    }
@@ -255,9 +254,9 @@
     .track .container{
         height: 1000px;
     }
-    .prizes .container{
+    /* .prizes .container{
         height: 1500px;
-    }
+    } */
 
 
 }
