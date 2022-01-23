@@ -5,11 +5,20 @@
 
 /*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
 
-@media (min-width: 1200px) and (max-width: 1500px) {}
+@media (min-width: 1200px) and (max-width: 2560px) {
+    .track-desc{
+        height: 200px;
+        overflow-y: scroll;
+    }
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .banner_main {
         padding-top: 130px;
+   }
+   .track-desc{
+       height: 200px;
+       overflow-y: scroll;    
    }
     
 }
@@ -50,14 +59,15 @@
         float: inherit;
         
     }
-    .track .container{
-        max-height: 1000px;
-    }
     .track .track-box {
         padding: 25px 15px;
     }
     .track .track-box h3 {
         font-size: 17px;
+    }
+    .track-desc{
+        height: 200px;
+        overflow-y: scroll;
     }
     .prizes .prizes-box {
         padding: 40px 10px 20px 10px;
@@ -79,9 +89,9 @@
         padding: 0px 30px;
         padding-bottom: 60px;
     }
-    .cont {
+    /* .cont {
         margin-top: 47%;
-    }
+    } */
     .main_form {
         margin-bottom: -92%;
     }
@@ -99,7 +109,7 @@
         height: 50px;
     }
     .banner_main {
-        padding-top: 200px;
+        padding-top: 10px;
    }
     .mean-container .mean-bar {
         margin-top: 0px;
@@ -121,9 +131,9 @@
         padding: 0px 30px;
         padding-bottom: 60px;
     }
-    .cont {
+    /* .cont {
         margin-top: 50%;
-    }
+    } */
     .main_form {
         margin-bottom: -58%;
     }
@@ -137,8 +147,6 @@
         padding: 0;
         width: 100%;
         top: 5px;
-        display: flex;
-        justify-content: flex-end;
     }
     .navigation .navbar-collapse {
         background: #fff;
@@ -146,7 +154,7 @@
         margin-top: 56px;
         position: absolute;
         width: 100%;
-        margin-right: 20px;
+        margin-right: 300px;
         z-index: 999;
     }
     .navigation.navbar-light .navbar-nav .nav-link {
@@ -159,7 +167,7 @@
     }
 
    .track .container{
-       height: 1000px;
+       height: 1300px;
    }
 }
 
@@ -221,7 +229,7 @@
         line-height: 30px;
     }
     .cont {
-        margin-top: 89%;
+        margin-top: 10%;
     }
     .main_form {
         margin-bottom: -102%;
@@ -252,7 +260,7 @@
         float: right;
     }
     .track .container{
-        height: 1000px;
+        height: 1300px;
     }
     /* .prizes .container{
         height: 1500px;

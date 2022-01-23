@@ -489,11 +489,22 @@ button {
      font-family: Poppins;
      padding-top: 90px;
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.track-desc::-webkit-scrollbar {
+     display: none;
+ }
+ 
+ /* Hide scrollbar for IE, Edge and Firefox */
+ .track-desc{
+   -ms-overflow-style: none;  /* IE and Edge */
+   scrollbar-width: none;  /* Firefox */
+ }
 .track .container{
-     height: 420px;
+     height: 550px;
      overflow-y: hidden;
-     transition: height 0.6s ease-in-out;
+    
 }
+
 .track .titlepage {
      text-align: center;
 }
@@ -550,8 +561,9 @@ button {
 }
 
 .track .track-box p {
-     font-size: 16px;
+     font-size: 15px;
      line-height: 24px;
+     text-align: justify;
      
 }
 
@@ -1064,11 +1076,14 @@ button {
 .sponsor .sponsor-type {
      text-align: center;
      border-color: grey;
-     padding-top: 30px;
+     padding-top: 40px;
      padding-bottom: 30px;
      /* background-image: url('https://i2.wp.com/files.123freevectors.com/wp-content/original/131286-gold-low-poly-background-template.jpg?w=800&q=95');
      background-repeat: no-repeat;
      background-size: cover; */
+     border-bottom: grey;
+     border-bottom-style: dotted;
+     border-width: 0.5px;
 }
 
 .sponsor .sponsor-type h2{
@@ -1150,7 +1165,6 @@ button {
 .cont {
      text-align: center;
      margin-top: 10%;
-    
      position: sticky;
      padding-bottom: 100px;
      
