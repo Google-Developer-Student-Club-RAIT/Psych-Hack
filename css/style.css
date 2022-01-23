@@ -425,8 +425,42 @@ button {
      font-weight: bold;
      padding: 0;
 }
+/* count down */
+.count{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
 
+background-color: #e6b3b3;
+/* background-image: linear-gradient(#ffd4d4,#e6b3b3); */
+height: 20vh;
+width: 100vw;
+padding-bottom: 40px;
+padding-top: 40px;
+ }
+#cdtext{
+     font-size: 30px;
+     font-weight: bold;
+}
+.pinkf{
+     color: rgb(255, 223, 223);
+     /* font-family: sans-serif; */
+     /* font-weight: lighter; */
+     /* letter-spacing: 3px; */
+     /* text-decoration: underline; */
+     /* text-decoration-color: #ffffff; */
 
+}
+.whitef{
+     color: #fff;
+}
+.countdown{
+     /* padding-left: 2vw; */
+     font-size: 40px;
+     font-weight: bold;
+}
+/* countdwon ends */
 /** about section **/
 
 .about {
