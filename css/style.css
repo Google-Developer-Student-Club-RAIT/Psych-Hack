@@ -555,7 +555,7 @@ button {
 }
 
 .track .track-box:hover {
-     background: rgb(245, 193, 63);
+     background: rgb(248, 212, 121);
      transition: ease-in all 0.5s;
      cursor: pointer;
 }
