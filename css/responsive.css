@@ -6,6 +6,9 @@
 /*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
 
 @media (min-width: 1200px) and (max-width: 2560px) {
+    .banner_main {
+        padding-top: 120px;
+   }
     .track-desc{
         height: 200px;
         overflow-y: scroll;
@@ -14,7 +17,7 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .banner_main {
-        padding-top: 130px;
+        padding-top: 120px;
    }
    .track-desc{
        height: 200px;

@@ -431,16 +431,18 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
-
 background-color: #e6b3b3;
 /* background-image: linear-gradient(#ffd4d4,#e6b3b3); */
-height: 20vh;
-width: 100vw;
+height: fit-content;
+width: 100%;
 padding-bottom: 40px;
 padding-top: 40px;
+border-radius: 20px;
+z-index: 3;
+position: sticky;
  }
 #cdtext{
-     font-size: 30px;
+     font-size: 25px;
      font-weight: bold;
 }
 .pinkf{
@@ -457,9 +459,27 @@ padding-top: 40px;
 }
 .countdown{
      /* padding-left: 2vw; */
-     font-size: 40px;
+     font-size: 44px;
      font-weight: bold;
 }
+.count ul{
+     display: flex;
+     /* flex: 1 0; */
+}
+.count li {
+     display: inline-block;
+     /* font-size: 25px; */
+     list-style-type: none;
+     padding: 1em;
+     text-transform: uppercase;    
+   }
+.count li span {
+     display: flex;
+     /* font-size: 30px; */
+     justify-content: center;
+     font-weight: bold;
+   }
+
 /* countdwon ends */
 /** about section **/
 
