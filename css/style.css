@@ -450,14 +450,14 @@ position: sticky;
 }
 /* .pinkf{
      color: rgb(255, 223, 223);
-     /* font-family: sans-serif; */
-     /* font-weight: lighter; */
-     /* letter-spacing: 3px; */
-     /* text-decoration: underline; */
-     /* text-decoration-color: #ffffff; */
+     font-family: sans-serif;
+     font-weight: lighter;
+     letter-spacing: 3px;
+     text-decoration: underline;
+     text-decoration-color: #ffffff;
 
-} */
-/* .whitef{
+} 
+.whitef{
      color: #fff;
 } */
 .countdown{
@@ -485,7 +485,7 @@ position: sticky;
      /* font-size: 30px; */
      justify-content: center;
      font-weight: bold;
-     color: black;
+     
    }
 
 /* countdwon ends */
