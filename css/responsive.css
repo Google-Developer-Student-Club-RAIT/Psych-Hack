@@ -282,6 +282,13 @@
     /* .prizes .container{
         height: 1500px;
     } */
+    .count li {
+        font-size: 10px;
+      }
+    .count li span {
+        font-size: 25px;
+    
+      }
 
 
 }
