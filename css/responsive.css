@@ -186,6 +186,9 @@
    .track .container{
        height: 1400px;
    }
+   .prizes-box .flip-card{
+    height: 450px;
+}
 }
 
 @media (max-width: 575px) {
@@ -289,6 +292,9 @@
         font-size: 25px;
     
       }
+      .prizes-box .flip-card{
+        height: 450px;
+   }
 
 
 }

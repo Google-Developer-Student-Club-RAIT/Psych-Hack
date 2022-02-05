@@ -123,7 +123,7 @@ li,
 ol {
      margin: 0px;
      padding: 0px;
-     list-style: none;
+     /* list-style: none; */
 }
 
 p {
@@ -894,7 +894,14 @@ position: sticky;
      box-shadow: #ddd 0px 0px 10px;
      
 }
+.prize-desc{
+     list-style-position: inside;
+     text-align: left;
+     font-size: 14px;
+     color: black;
+     padding-left: 20px;
 
+}
 .prizes .prizes-box p {
      font-size: 16px;
      line-height: 24px;
@@ -940,6 +947,14 @@ position: sticky;
 #celo{
      padding-top: 5px;
 }
+#raahee{
+     height: 60%;
+     width: 60%;
+}
+#sponsor-prizes{
+     justify-content: center;
+     display: flex;
+}
 .prizes .prizes-box-spon {
      text-align: center;
      height: fit-content;
@@ -974,13 +989,17 @@ position: sticky;
 
      
    }
+.prizes-box .flip-card{
+     height: 370px;
+     overflow-y: scroll;
+}
    
    .flip-card-inner {
      text-align: center;
      transition: transform 0.6s;
      transform-style: preserve-3d;
      width: auto;
-     height: 150px;
+     height: fit-content;
      display: flex;
      justify-content: center;
      
@@ -1021,8 +1040,23 @@ position: sticky;
      transform: rotateY(180deg);
    
    }
-
-   
+/* Hide scrollbar for Chrome, Safari and Opera */
+.flip-card::-webkit-scrollbar {
+     display: none;
+ }
+ 
+ /* Hide scrollbar for IE, Edge and Firefox */
+ .flip-card{
+   -ms-overflow-style: none;  /* IE and Edge */
+   scrollbar-width: none;  /* Firefox */
+ }
+.prize-desc-participation{
+     list-style-position: inside;
+     text-align: left;
+     font-size: 14px;
+     color: black;
+     padding-left: 20px;
+}
 
 
 
@@ -1399,6 +1433,13 @@ position: sticky;
 .sponsor-btn:hover {
      background: blue;
      color: white;
+}
+/* #gdsc_logos{
+     height: 180px;
+} */
+#kugdurg img{
+ height: 129px;
+ width: 129px;
 }
 /* END Sponsor Section */
 
