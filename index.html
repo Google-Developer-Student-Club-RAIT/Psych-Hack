@@ -1183,6 +1183,14 @@
                                     </div>
                                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
                                        <div class="org-box">
+                                          <i><img src="progressive images/Judges-mentor/Tanmay Trivedi.jpeg" alt="#" /></i>
+                                          <h3> Tanmay Trivedi</h3>
+                                             <a class="profile" href="https://www.linkedin.com/in/tanmay-trivedi-665b771aa/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                          </p>
+                                       </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                                       <div class="org-box">
                                           <i><img src="progressive images/Judges-mentor/Tejaswi Chaudhari.jpeg" alt="#" /></i>
                                           <h3>Tejaswi Chaudhari</h3>
                                              <a class="profile" href="https://www.linkedin.com/in/tejaswi-chaudhari/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -1364,6 +1372,10 @@
                      console.log("clicked");
                         if (content.style.height === '1400px') {
                            content.style.height = '4000px';
+                           coll.innerHTML = 'Collapse'
+                           var strLink = "#track" ;
+                           document.getElementById("open").setAttribute("href",strLink);
+
                            // content.style.transition = 'height 1s ease-in-out;';
                         } else {
                            content.style.height = '1400px';
@@ -1374,6 +1386,8 @@
                   coll.addEventListener("click", function() {
                      if (content.style.height === '550px') {
                         content.style.height = '1700px';
+                        coll.innerHTML ='Collapse';
+                        
                         // content.style.transition = 'height 1s ease-in-out;';
                      } else {
                         content.style.height = '550px';
