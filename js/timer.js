@@ -4,12 +4,19 @@ function eventTimer(){
     document.getElementById("cdtext").innerHTML = "EVENT IS NOW LIVE";
     // Set the date we're counting down to
     var countDownDate = new Date("feb 13, 2022 22:00:00").getTime();
+
     
     // Get today's date and time
+    var d= new Date()
     var now = new Date().getTime();
+    var localOffset = d.getTimezoneOffset() * 60000;
+    var utc = now + localOffset;
+    var offset = 5.5;   
+    var bombay = utc + (3600000*offset);
+    var bombaynow = new Date(bombay).getTime(bombay);
 
     // Find the distance between now and the count down date
-    var distance = countDownDate - now;
+    var distance = countDownDate - bombaynow;
 
     // Time calculations for days, hours, minutes and seconds
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -43,10 +50,19 @@ var countDownDate = new Date("feb 12, 2022 10:00:00").getTime();
 var x = setInterval(function() {
 
   // Get today's date and time
+  var d= new Date()
   var now = new Date().getTime();
+  var localOffset = d.getTimezoneOffset() * 60000;
+  var utc = now + localOffset;
+  var offset = 5.5;   
+  var bombay = utc + (3600000*offset);
+  var bombaynow = new Date(bombay).getTime(bombay);
+
+
+
 
   // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+  var distance = countDownDate - bombaynow;
 
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
